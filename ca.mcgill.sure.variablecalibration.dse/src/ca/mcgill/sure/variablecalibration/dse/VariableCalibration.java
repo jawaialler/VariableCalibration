@@ -28,7 +28,7 @@ public class VariableCalibration {
 	
 	//add rules
 	VCRuleProvider rules = new VCRuleProvider();
-	dse.addTransformationRule(rules.nameOfRule);
+	dse.addTransformationRule(rules.mismatchDataAndInput);
 	
 	//add objectives
 	dse.addObjective(
