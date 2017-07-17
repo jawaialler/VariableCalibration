@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ca.mcgill.sure.variablecalibration.patterns
+Bundle-SymbolicName: ca.mcgill.sure.variablecalibration.patterns;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Export-Package: ca.mcgill.sure.variablecalibration.patterns,
+ ca.mcgill.sure.variablecalibration.patterns.util
+Require-Bundle: ca.mcgill.sure.variablecalibration.model,
+ org.eclipse.emf.ecore,
+ org.eclipse.viatra.query.runtime,
+ org.eclipse.xtext.xbase.lib
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.apache.log4j
