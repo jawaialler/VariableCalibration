@@ -1,0 +1,30 @@
+/**
+ * Generated from platform:/resource/ca.mcgill.sure.variablecalibration.patterns/src/ca/mcgill/sure/variablecalibration/patterns/patterns.vql
+ */
+package ca.mcgill.sure.variablecalibration.patterns.util;
+
+import ca.mcgill.sure.variablecalibration.Input;
+import ca.mcgill.sure.variablecalibration.patterns.QueryNameMatch;
+import org.eclipse.viatra.query.runtime.api.IMatchProcessor;
+
+/**
+ * A match processor tailored for the ca.mcgill.sure.variablecalibration.patterns.queryName pattern.
+ * 
+ * Clients should derive an (anonymous) class that implements the abstract process().
+ * 
+ */
+@SuppressWarnings("all")
+public abstract class QueryNameProcessor implements IMatchProcessor<QueryNameMatch> {
+  /**
+   * Defines the action that is to be executed on each match.
+   * @param pInput the value of pattern parameter input in the currently processed match
+   * @param pName the value of pattern parameter name in the currently processed match
+   * 
+   */
+  public abstract void process(final Input pInput, final String pName);
+  
+  @Override
+  public void process(final QueryNameMatch match) {
+    process(match.getInput(), match.getName());
+  }
+}

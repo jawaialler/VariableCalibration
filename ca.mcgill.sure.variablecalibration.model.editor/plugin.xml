@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Hillslope1D -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="ca.mcgill.sure.variablecalibration.presentation.Hillslope1DModelWizardID"
+            name="%_UI_Hillslope1DModelWizard_label"
+            class="ca.mcgill.sure.variablecalibration.presentation.Hillslope1DModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Hillslope1DModelFile.gif">
+         <description>%_UI_Hillslope1DModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Hillslope1D -->
+      <editor
+            id="ca.mcgill.sure.variablecalibration.presentation.Hillslope1DEditorID"
+            name="%_UI_Hillslope1DEditor_label"
+            icon="icons/full/obj16/Hillslope1DModelFile.gif"
+            extensions="hillslope1d"
+            class="ca.mcgill.sure.variablecalibration.presentation.Hillslope1DEditor"
+            contributorClass="ca.mcgill.sure.variablecalibration.presentation.Hillslope1DActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,15 @@
+package ca.mcgill.sure.variablecalibration.patterns
+
+import "ca.mcgill.sure.variablecalibration";
+
+pattern input(i : Input) {
+    Input(i);
+}
+
+pattern inputName(input : Input, name) {
+    Input.name(input, name);
+}
+
+pattern queryName(input : Input, name) {
+	Input.name(input, name);
+}

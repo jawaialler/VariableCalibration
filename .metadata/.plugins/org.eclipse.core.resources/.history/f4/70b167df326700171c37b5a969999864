@@ -1,0 +1,12 @@
+package ca.mcgill.sure.variablecalibration.dse;
+import 
+
+public class VariableCalibration {
+	
+	public static void main(String[] args) {
+
+	DesignSpaceExplorer dse = new DesignSpaceExplorer();
+	
+	
+	}	
+}

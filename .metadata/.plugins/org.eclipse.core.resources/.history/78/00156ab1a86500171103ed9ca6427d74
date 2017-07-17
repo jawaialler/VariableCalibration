@@ -1,0 +1,42 @@
+/**
+ */
+package hillslope1d;
+
+import org.eclipse.emf.common.util.EList;
+
+import org.eclipse.emf.ecore.EObject;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Configuration</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link hillslope1d.Configuration#getData <em>Data</em>}</li>
+ * </ul>
+ *
+ * @see hillslope1d.ModelPackage#getConfiguration()
+ * @model
+ * @generated
+ */
+public interface Configuration extends EObject {
+	/**
+	 * Returns the value of the '<em><b>Data</b></em>' reference list.
+	 * The list contents are of type {@link hillslope1d.Value}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Data</em>' reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Data</em>' reference list.
+	 * @see hillslope1d.ModelPackage#getConfiguration_Data()
+	 * @model
+	 * @generated
+	 */
+	EList<Value> getData();
+
+} // Configuration

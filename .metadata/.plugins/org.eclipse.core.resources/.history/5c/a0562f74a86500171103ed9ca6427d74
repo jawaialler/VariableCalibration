@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: VariableCalibrationFix
+Bundle-SymbolicName: ca.mcgill.sure.variablecalibration.dse
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.viatra.dse;bundle-version="0.15.2",
+ com.google.guava,
+ org.eclipse.xtext.xbase.lib,
+ org.eclipse.xtend.lib,
+ org.eclipse.xtend.lib.macro,
+ ca.mcgill.sure.variablecalibration.model;bundle-version="0.1.0",
+ ca.mcgill.sure.variablecalibration.patterns;bundle-version="0.0.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

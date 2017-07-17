@@ -1,0 +1,36 @@
+[2017-07-10 14:41:41] Executing startup tasks
+[2017-07-10 14:41:41] Java(TM) SE Runtime Environment 1.8.0_111-b14
+[2017-07-10 14:41:41] Product self.product.version
+[2017-07-10 14:41:41] Bundle org.eclipse.oomph.setup 1.7.0.v20170224-1311, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-10 14:41:41] Bundle org.eclipse.oomph.setup.core 1.7.0.v20170301-0747, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-10 14:41:41] Bundle org.eclipse.oomph.setup.p2 1.7.0.v20170217-1051, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-10 14:41:41] Performing Preference /instance/org.eclipse.core.resources/refresh.enabled = true
+[2017-07-10 14:41:41] Performing Preference /instance/org.eclipse.core.resources/refresh.lightweight.enabled = true
+[2017-07-10 14:41:41] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.core.xdebugDebuggerSettingsProvider = <settings><proxyEnable>false</proxyEnable><clientPort>9000</clientPort><ownerId>php-exe-60f6ac29-f520-4300-8c18-720ecc57c238</ownerId><proxyIdeKey>ECLIPSE_DBGP_xxx</proxyIdeKey><proxyAddress></proxyAddress></settings>...
+[2017-07-10 14:41:41] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.core.zendDebuggerSettingsProvider = <settings><clientPort>10137</clientPort><ownerId>php-exe-60f6ac29-f520-4300-8c18-720ecc57c238</ownerId></settings>...
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coredefaultPHP = PHP 5.6.28 (CLI)
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPDebuggers = org.eclipse.php.debug.core.noneDebugger
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPInis = C:\xampp\php\php.ini
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPLoadIniDefaults = false
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPLocations = C:\xampp\php\php.exe
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPNames = PHP 5.6.28 (CLI)
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.coreinstalledPHPUniqueIds = php-exe-60f6ac29-f520-4300-8c18-720ecc57c238
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.php.debug.core/org.eclipse.php.debug.corephp_versions = null
+[2017-07-10 14:41:42] Performing Preference /instance/org.eclipse.viatra.query.tooling.ui/org.eclipse.viatra.query.tooling.ui.queryexplorer.DynamicEMFMode = true
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/bootstrap = 
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/debug_print_output = true
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/pear_library = <Internal>
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/php_executable = PHP 5.6.28 (CLI)
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/source_file_pattern_folder = 
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/test_file_pattern_file = %fTest.%e
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/test_file_pattern_folder = \%p\tests\%d
+[2017-07-10 14:41:42] Performing Preference /instance/org.phpsrc.eclipse.pti.tools.phpunit/test_file_super_class = PHPUnit_Framework_TestCase
+[2017-07-10 14:41:42] 
+[2017-07-14 09:42:03] Executing startup tasks
+[2017-07-14 09:42:03] Java(TM) SE Runtime Environment 1.8.0_111-b14
+[2017-07-14 09:42:03] Product self.product.version
+[2017-07-14 09:42:03] Bundle org.eclipse.oomph.setup 1.7.0.v20170224-1311, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-14 09:42:03] Bundle org.eclipse.oomph.setup.core 1.7.0.v20170301-0747, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-14 09:42:03] Bundle org.eclipse.oomph.setup.p2 1.7.0.v20170217-1051, build=2932, branch=cc66c993507ade50e4b3a824a3adb4e94c4ac25f
+[2017-07-14 09:42:03] Performing Preference /instance/org.eclipse.ui.editors/lineNumberRuler = true
+[2017-07-14 09:42:03] 

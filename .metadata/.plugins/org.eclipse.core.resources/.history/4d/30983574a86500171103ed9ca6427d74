@@ -1,0 +1,14 @@
+package ca.mcgill.sure.variablecalibration.dse;
+
+import org.eclipse.viatra.dse.api.DesignSpaceExplorer;
+
+public class VariableCalibration{
+	
+    private DesignSpaceExplorer dse;
+
+	
+	
+	
+	
+	
+}

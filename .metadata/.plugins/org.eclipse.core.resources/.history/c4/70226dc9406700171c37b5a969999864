@@ -1,0 +1,30 @@
+package ca.mcgill.sure.variablecalibration.dse;
+
+import org.eclipse.viatra.dse.api.DesignSpaceExplorer;
+
+import ca.mcgill.sure.variablecalibration.Hillslope1DPackage;
+import ca.mcgill.sure.variablecalibration.HillslopeModel;
+import ca.mcgill.sure.variablecalibration.statecoder.VCStateCoderFactory;
+
+public class VariableCalibration {
+	
+	public static void main(String[] args) {
+
+	DesignSpaceExplorer dse = new DesignSpaceExplorer();
+	
+	//create initial model
+	HillslopeModel initialModel = VCHelper.createInitialModel(); 
+	dse.setInitialModel(initialModel);
+	dse.addMetaModelPackage(Hillslope1DPackage.eINSTANCE);
+	
+	//add state coder factory
+	dse.setStateCoderFactory(new VCStateCoderFactory()); 
+	
+	//add rules
+	VCDseRules rules = new VCDseRules();
+	dse.addTransformationRule();
+	
+	
+	
+	}
+}

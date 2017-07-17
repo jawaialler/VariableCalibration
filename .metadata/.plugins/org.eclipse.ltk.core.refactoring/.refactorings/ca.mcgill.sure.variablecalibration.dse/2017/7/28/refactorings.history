@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ca.mcgill.sure.variablecalibration.dse/src/ca/mcgill/sure/variablecalibration/rules/VariableCalibrationRuleProvider.xtend&apos; to &apos;VCRuleProvider.xtend&apos;" description="Rename resource &apos;VariableCalibrationRuleProvider.xtend&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/ca/mcgill/sure/variablecalibration/rules/VariableCalibrationRuleProvider.xtend" name="VCRuleProvider.xtend" stamp="1499889773607" updateReferences="true"/>
+</session>

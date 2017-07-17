@@ -1,0 +1,24 @@
+package ca.mcgill.sure.variablecalibration.rules
+
+import org.eclipse.viatra.transformation.runtime.emf.rules.batch.BatchTransformationRuleFactory
+import org.eclipse.viatra.transformation.runtime.emf.rules.batch.BatchTransformationRule
+
+class VCRuleProvider {
+	private extension BatchTransformationRuleFactory factory = new BatchTransformationRuleFactory
+    
+    public BatchTransformationRule<?, ?> nameOfRule
+   
+ 	// TODO add the rules
+
+    new() {
+        nameOfRule = createRule
+                .name("NameOfRule")
+               // .precondition(AddFeatureQuerySpecification.instance())
+                .action[
+               //     c.getEncapsulates().add(f)
+                ]
+                .build
+       
+       }
+	
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><plugin>
+  <extension id="ca.mcgill.sure.variablecalibration.patterns.Patterns" point="org.eclipse.viatra.query.runtime.queryspecification">
+    <group group="org.eclipse.viatra.query.runtime.extensibility.SingletonExtensionFactory:ca.mcgill.sure.variablecalibration.patterns.Patterns" id="ca.mcgill.sure.variablecalibration.patterns.Patterns">
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.input"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.inputName"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.queryName"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.valuesOfConfig"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.inputOfCat"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.mismatchDataAndInput"/>
+    </group>
+  </extension>
+</plugin>
