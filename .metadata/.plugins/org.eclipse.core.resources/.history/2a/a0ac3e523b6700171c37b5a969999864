@@ -1,5 +1,0 @@
-package ca.mcgill.sure.variablecalibration.statecoder;
-
-public class VCStateCoder implements IStateCoder {
-
-}

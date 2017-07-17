@@ -1,5 +1,0 @@
-package ca.mcgill.sure.variablecalibration.rules
-
-class VCRuleProvider {
-	
-}
