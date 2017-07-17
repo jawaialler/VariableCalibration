@@ -1,0 +1,35 @@
+## java
+*.jar
+*.war
+*.ear
+*.class
+
+## eclipse
+.project
+.metadata
+bin/*
+tmp/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+*.launch
+/bin/
+
+## IntelliJ
+/out
+.idea/
+*.iml
+*.ipr
+*.iws
+*.xml
+
+## TileO
+saves/
+
+## Apple
+*.DS_Store
