@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Example
+Bundle-SymbolicName: ca.mcgill.sure.variablecalibration.example
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: ca.mcgill.sure.variablecalibration.model;bundle-version="0.1.0",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.12.0"
+Import-Package: ca.mcgill.sure.variablecalibration

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ca.mcgill.sure.variablecalibration:HillslopeModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ca.mcgill.sure.variablecalibration="ca.mcgill.sure.variablecalibration">
+  <configurations data="//@categories.1/@input.0/@possibleValues.0" row="2" column="1"/>
+  <configurations row="1" column="1"/>
+  <categories name="geologic">
+    <input name="d" description="soil depth"/>
+  </categories>
+  <categories name="hydrologic">
+    <input name="recharge_chronical" description="m.s-1">
+      <possibleValues>
+        <value>0.000000E+00
+3</value>
+        <value>600000E+03</value>
+      </possibleValues>
+      <output/>
+    </input>
+  </categories>
+</ca.mcgill.sure.variablecalibration:HillslopeModel>
