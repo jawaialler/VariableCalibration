@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><plugin>
   <extension id="ca.mcgill.sure.variablecalibration.patterns.Patterns" point="org.eclipse.viatra.query.runtime.queryspecification">
     <group group="org.eclipse.viatra.query.runtime.extensibility.SingletonExtensionFactory:ca.mcgill.sure.variablecalibration.patterns.Patterns" id="ca.mcgill.sure.variablecalibration.patterns.Patterns">
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.inputWithoutValue"/>
       <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.mismatchDataAndInput"/>
+      <query-specification fqn="ca.mcgill.sure.variablecalibration.patterns.differentConfig"/>
     </group>
   </extension>
 </plugin>

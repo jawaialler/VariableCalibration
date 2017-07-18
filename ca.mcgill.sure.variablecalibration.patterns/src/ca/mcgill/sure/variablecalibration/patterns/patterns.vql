@@ -10,10 +10,6 @@ private pattern inputName(input : Input, name) {
     Input.name(input, name);
 }
 
-private pattern queryName(input : Input, name) {
-	Input.name(input, name);
-}
-
 private pattern valuesOfConfig(conf : Configuration, value : Value) {
 	Configuration.data(conf, value);
 }
@@ -22,10 +18,40 @@ private pattern inputOfCat(cat : Category, input : Input) {
 	Category.input(cat, input);
 }
 
+private pattern outputsOfInputs(o : Output, i : Input){
+	Output.input(o, i);
+}
+
+private pattern valuesOfInput(input : Input, value : Value){
+	Input.possibleValues(input, value);
+}
+
+pattern inputWithoutValue(input : Input){
+	neg find valuesOfInput(input, _value);
+}
+
+/* 
+private pattern rowOfConfig(conf : Configuration) {
+	Configuration.row(conf, row);
+}
+
+private pattern colOfConfig(conf : Configuration) {
+	Configuration.column(conf, col);
+}
+*/
+
 pattern mismatchDataAndInput(conf : Configuration){
 	HillslopeModel.configurations(model, conf);
 	HillslopeModel.categories(model, cat);
 	NbOfValues == count find valuesOfConfig(conf, _); 
 	NbOfInputs == count find inputOfCat(cat, _);
 	NbOfInputs != NbOfValues;	
+}
+
+pattern differentConfig(conf : Configuration){
+	Configuration.row(conf, row1);
+	Configuration.row(conf, row2);
+	Configuration.column(conf, col1);
+	Configuration.column(conf, col2);
+	check((row1 == row2) && (col1 == col2));
 }

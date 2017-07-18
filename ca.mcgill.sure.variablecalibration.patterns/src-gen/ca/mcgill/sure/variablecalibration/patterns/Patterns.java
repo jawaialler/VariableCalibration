@@ -3,7 +3,11 @@
  */
 package ca.mcgill.sure.variablecalibration.patterns;
 
+import ca.mcgill.sure.variablecalibration.patterns.DifferentConfigMatcher;
+import ca.mcgill.sure.variablecalibration.patterns.InputWithoutValueMatcher;
 import ca.mcgill.sure.variablecalibration.patterns.MismatchDataAndInputMatcher;
+import ca.mcgill.sure.variablecalibration.patterns.util.DifferentConfigQuerySpecification;
+import ca.mcgill.sure.variablecalibration.patterns.util.InputWithoutValueQuerySpecification;
 import ca.mcgill.sure.variablecalibration.patterns.util.MismatchDataAndInputQuerySpecification;
 import org.eclipse.viatra.query.runtime.api.ViatraQueryEngine;
 import org.eclipse.viatra.query.runtime.api.impl.BaseGeneratedPatternGroup;
@@ -19,10 +23,13 @@ import org.eclipse.viatra.query.runtime.exception.ViatraQueryException;
  * <p> From package ca.mcgill.sure.variablecalibration.patterns, the group contains the definition of the following patterns: <ul>
  * <li>input</li>
  * <li>inputName</li>
- * <li>queryName</li>
  * <li>valuesOfConfig</li>
  * <li>inputOfCat</li>
+ * <li>outputsOfInputs</li>
+ * <li>valuesOfInput</li>
+ * <li>inputWithoutValue</li>
  * <li>mismatchDataAndInput</li>
+ * <li>differentConfig</li>
  * </ul>
  * 
  * @see IPatternGroup
@@ -47,7 +54,17 @@ public final class Patterns extends BaseGeneratedPatternGroup {
   private static Patterns INSTANCE;
   
   private Patterns() throws ViatraQueryException {
+    querySpecifications.add(InputWithoutValueQuerySpecification.instance());
     querySpecifications.add(MismatchDataAndInputQuerySpecification.instance());
+    querySpecifications.add(DifferentConfigQuerySpecification.instance());
+  }
+  
+  public InputWithoutValueQuerySpecification getInputWithoutValue() throws ViatraQueryException {
+    return InputWithoutValueQuerySpecification.instance();
+  }
+  
+  public InputWithoutValueMatcher getInputWithoutValue(final ViatraQueryEngine engine) throws ViatraQueryException {
+    return InputWithoutValueMatcher.on(engine);
   }
   
   public MismatchDataAndInputQuerySpecification getMismatchDataAndInput() throws ViatraQueryException {
@@ -56,5 +73,13 @@ public final class Patterns extends BaseGeneratedPatternGroup {
   
   public MismatchDataAndInputMatcher getMismatchDataAndInput(final ViatraQueryEngine engine) throws ViatraQueryException {
     return MismatchDataAndInputMatcher.on(engine);
+  }
+  
+  public DifferentConfigQuerySpecification getDifferentConfig() throws ViatraQueryException {
+    return DifferentConfigQuerySpecification.instance();
+  }
+  
+  public DifferentConfigMatcher getDifferentConfig(final ViatraQueryEngine engine) throws ViatraQueryException {
+    return DifferentConfigMatcher.on(engine);
   }
 }

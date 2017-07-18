@@ -29,6 +29,15 @@ import org.eclipse.viatra.query.runtime.util.ViatraQueryLoggingUtil;
  * 
  * <p>Original source:
  * <code><pre>
+ * private pattern rowOfConfig(conf : Configuration) {
+ * 	Configuration.row(conf, row);
+ * }
+ * 
+ * private pattern colOfConfig(conf : Configuration) {
+ * 	Configuration.column(conf, col);
+ * }
+ * 
+ * 
  * pattern mismatchDataAndInput(conf : Configuration){
  * 	HillslopeModel.configurations(model, conf);
  * 	HillslopeModel.categories(model, cat);
