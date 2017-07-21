@@ -7,6 +7,10 @@ import ca.mcgill.sure.variablecalibration.patterns.MismatchDataAndInputMatch
 import ca.mcgill.sure.variablecalibration.patterns.MismatchDataAndInputMatcher
 import org.apache.log4j.Logger
 import ca.mcgill.sure.variablecalibration.Configuration
+import ca.mcgill.sure.variablecalibration.patterns.InputWithoutValueMatch
+import ca.mcgill.sure.variablecalibration.patterns.InputWithoutValueMatcher
+import ca.mcgill.sure.variablecalibration.patterns.util.InputWithoutValueQuerySpecification
+import ca.mcgill.sure.variablecalibration.Input
 
 class VCRuleProvider {
 	extension Logger logger = Logger.getLogger(VCRuleProvider); 
@@ -14,6 +18,7 @@ class VCRuleProvider {
 	private extension BatchTransformationRuleFactory factory = new BatchTransformationRuleFactory
     
     public BatchTransformationRule<MismatchDataAndInputMatch, MismatchDataAndInputMatcher> mismatchDataAndInput
+    public BatchTransformationRule<InputWithoutValueMatch, InputWithoutValueMatcher> inputWithoutValue
    
  	// TODO add the rules
 
@@ -28,7 +33,16 @@ class VCRuleProvider {
                  //   c.getEncapsulates().add(f)
                 ]
                 .build
-       
+                
+         inputWithoutValue = createRule
+         		.name("inputWithoutValue")
+         		.precondition(InputWithoutValueQuerySpecification.instance())
+         		.action[info("rule input without value executed on input: " + it.input.toString)
+                	val Input in = it.input
+                	//assign a value
+                ]
+                .build
+     
        }
 	
 }
